@@ -1,0 +1,11 @@
+<div>
+
+  <button (click)="back()">Huy</button>
+</div>
+<form [formGroup]="productForm" (ngSubmit)="delete()">
+  <input name="id" type="number" formControlName="id" >
+  <input name="id" type="hidden" formControlName ="name" >
+  <input name="id" type="hidden" formControlName ="price" >
+  <input name="id" type="hidden" formControlName ="description" >
+  <button (click)="delete()">quyết định xoá</button>
+</form>

@@ -1,0 +1,8 @@
+<h3>Sua sp</h3>
+<form  [formGroup]="productForm" (ngSubmit)="editProduct()">
+  <input type="number" name="id"  formControlName="id" placeholder="nhap id"> <br>
+  <input type="text" name="name" formControlName="name" placeholder="nhap ten sp"> <br>
+  <input type="number" name="price" formControlName="price" placeholder="Nhap gia ban"> <br>
+  <input type="text" name="description" formControlName="description" placeholder="Mo ta sp"> <br/>
+  <button>Edit</button>
+</form>
